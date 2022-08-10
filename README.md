@@ -1,6 +1,6 @@
 # TransferMoneyService
 
-# The project helps to setup user-accounts and transfer balance between them
+## The project helps to setup user-accounts and transfer balance between them
 
 Download the project using
 ```bash
@@ -20,7 +20,7 @@ or you can run using your IDE
 
 
 ### The project has 3 main feature
-####1. Setup an account
+#### 1. Setup an account
 Input is expected in the format of string and big decimal
 ```
 curl --location --request POST 'http://localhost:8080/userDetails/v1/createNewUser' \
@@ -31,13 +31,13 @@ curl --location --request POST 'http://localhost:8080/userDetails/v1/createNewUs
 }'
 ```
 
-####2. Check balance
+#### 2. Check balance
 Change Path variable to your account id received when account was created
 ```
 curl --location --request GET 'http://localhost:8080/userDetails/v1/getBalance/1'
 ```
 
-####3. Transfer Money between account
+#### 3. Transfer Money between account
 Path variable contains sourceId, and request body contains destination account id and amount to be transferred.
 ```
 curl --location --request POST 'http://localhost:8080/transaction/v1/transferMoney/1' \
